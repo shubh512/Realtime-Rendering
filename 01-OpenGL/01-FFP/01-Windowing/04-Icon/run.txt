@@ -1,0 +1,10 @@
+rc file -> resource script
+.rc  -> resource script
+.res -> compiled resource script
+
+
+run commands:
+    - cl.exe /c /EHsc window.c
+    - rc.exe window.rc
+    - link.exe window.obj window.res User32.lib GDI32.lib /SUBSYSTEM:WINDOWS
+    - window.exe 

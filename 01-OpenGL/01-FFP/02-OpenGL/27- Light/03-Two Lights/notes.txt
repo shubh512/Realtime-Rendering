@@ -1,0 +1,8 @@
+Attenuation = 1/(Kc + Kl* d +Kq * (d^2))
+
+d = distance between the lit vertex and position of light
+Kc = GL_CONSTANT_ATTENUATION
+Kl = GL_LINEAR_ATTENUATION
+Kq = GL_QUADRATIC_ATTENUATION
+
+Ambient, DIffuse and Specular light may have attenuation but Emissive light has no attenuation.

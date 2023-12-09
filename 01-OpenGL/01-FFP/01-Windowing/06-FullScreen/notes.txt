@@ -1,0 +1,41 @@
+Steps for Full Screen
+User defined Function -> void toggleFullScreen(void)
+* As convention change Create_window to CreateWindowEx and add first parameter as Extended window style WS_EX_APPWINDOW 
+which will help to bring your window on top of the taskbar 
+
+
+We will do toggling of FullScreen on key press of 'F' or 'f'
+
+    1. if not FullScreen proceed with following steps:
+        A. Get the current Window Style
+            if that window style contains WS_OVERLAPPEDWINDOW 
+                a. Get current Window Placement
+                b. Get height and width of Monitor for that get monitor's handle first
+                c. If both a and b are successful 
+                    i. Remove WS_OVERLAPPEDWINDOW from current window style 
+                   ii. Set new Full Screen Window such that it will be overlapped, from edge to edge of montior screen and it will be top of the 'Z' order.
+
+
+        B. Conventionally in FullScreen mode System Cursor is hidden so hide the Cursor
+     
+        Now the window is FullScreen.
+
+    2. if Window is already in FullScreen mode
+        A. Set the Window Placement width, height to the previous of the Full Screen 
+        B. Add WS_OVERLAPPEDWINDOW to the window style again 
+        C. Set the Window position such that it will be unaffected by parents 'Z' order, movement, parents retain
+        D. Start showing System Cursor again
+
+        Now the window is like before FullScreen.
+
+
+Note:
+WS_OVERLAPPEDWINDOW is a combination of 6 styles:
+    WS_CAPTION -> not needed for full screen
+    WS_OVERLAPPED 
+    WS_SYSMENU -> not needed for full screen
+    WS_THICKFRAME -> not needed for full screen
+    WS_MINIMIZEBOX -> not needed for full screen
+    WS_MAXIMIZEBOX -> not needed for full screen
+
+    Hence, WS_OVERLAPPEDWINDOW is being removed in 1.A.c.i

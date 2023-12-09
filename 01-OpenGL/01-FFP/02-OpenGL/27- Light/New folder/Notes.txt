@@ -1,0 +1,40 @@
+1.
+
+
+
+
+
+   1. enable  GL_NORMALIZE by using glEnable function or
+   2. enable GL_RESCALE_NORMAL by using glEnable function
+
+   To specify normal use glNormal *functions
+
+2. FFP opengl supports 8 lights. Numberesd from GL_LIGHT0 to GL_LIGHT7. By default GL_LIGHT0 is enabled that's why 
+even though we don't use light yet objects are visible without enabling any light. 
+	All of the 10 properties are used glLightfv function.
+	There are about 10 important properties of light.
+	GL_AMBIENT
+	GL_DIFFUSE
+	GL_SPECULAR
+
+	Next three are concerned with spotlights.
+	GL_SPOT_CUTOFF
+	GL_SPOT_DIRECTION
+	GL_EXPONENT
+
+	Next three are about attenuation.
+	GL_CONSTANT_ATTENUATION
+	GL_CONSTANT_LINEAR_ATTENUATION
+	GL_CONSTANT_QUADRATIC_ATTENUATION
+
+	
+GL_LIGHT0 is white. Therefore when no colour is assigned the object will look white. 
+BY default GL_LIGHT1 to GL_LIGHT7 GL_DIFFUSE and GL_SPECULAR are black. 
+
+**Enabling light only is not enough, there is a global lighting switch which has to be enabled to enable all default lighting. 
+
+There are 4 points to consider in lighting model:
+1. Whether to consider outer surface or inner surface-> GL_LIGHT_MODEL_TWO_SIDE -> by default lighting model is not two sided
+2. Whether to consider global ambient light or not-> specified by GL_LIGHT_AMBIENT
+3. Whether to consider by default opengl assumes viewer is infinitely away and looking into the screen.
+4. 	

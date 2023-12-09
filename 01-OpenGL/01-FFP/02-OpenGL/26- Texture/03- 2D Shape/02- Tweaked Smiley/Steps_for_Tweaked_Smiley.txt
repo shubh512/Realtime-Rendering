@@ -1,0 +1,2 @@
+1. global integer "keyPress" intialized to -1.
+2. 

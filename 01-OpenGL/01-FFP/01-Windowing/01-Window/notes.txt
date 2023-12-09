@@ -1,0 +1,8 @@
+user32.dll, gdi32.dll, kernel32.dll ->API func body
+
+user32.dll -> user interface
+gdi32.dll  -> graphics device interface
+kernel32.dll -> file system and like API are in this
+
+dll -> dynamic link libaray
+lib -> import library

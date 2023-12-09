@@ -1,0 +1,3 @@
+Base Application: Ortho Triangle
+1. Remove if else in resize function as H and w calculations are not needed
+2. Copy identity matrix 

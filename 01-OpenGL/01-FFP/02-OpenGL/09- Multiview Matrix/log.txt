@@ -1,0 +1,7 @@
+Program Started Successfully
+
+Resized to width: 784, height: 561
+
+Resized to width: 800, height: 600
+Program Ended Successfully
+Program Ended Successfully!

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "**/frontmatter.json": "jsonc",
+        "**/.frontmatter/config/*.json": "jsonc",
+        "gl.h": "c",
+        "math.h": "c"
+    }
+}

@@ -1,0 +1,6 @@
+
+
+run commands:
+    - cl.exe /c /EHsc window.c
+    - link.exe window.obj User32.lib GDI32.lib /SUBSYSTEM:WINDOWS
+    - window.exe 
